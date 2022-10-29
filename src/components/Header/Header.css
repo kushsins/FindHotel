@@ -1,0 +1,26 @@
+.header {
+  padding: 0 24px;
+}
+.wrapper {
+  min-height: var(--header-height);
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.flexItem {
+  flex: 1;
+}
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+}
+.image {
+  margin: 0px auto;
+  height: 100%;
+  max-width: 100%;
+  width: auto;
+}

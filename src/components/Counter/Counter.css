@@ -1,0 +1,16 @@
+.counter {
+  display: flex;
+  font-size: 1.25rem;
+}
+.count {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+.counterBtn {
+  height: 40px;
+  width: 40px;
+  border-color: #b8d9ff;
+  color: #0077ff;
+  box-shadow: none;
+}

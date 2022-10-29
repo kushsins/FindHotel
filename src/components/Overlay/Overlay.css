@@ -1,0 +1,52 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(42, 51, 61, 0.6);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popupWrapper {
+  height: unset;
+  width: 400px;
+  margin: 0px;
+  background-color: white;
+  box-shadow: rgb(42 51 61 / 10%) 0px 2px 8px, rgb(42 51 61 / 10%) 0px 0px 2px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 70%;
+  border-radius: 6px;
+}
+.popup {
+  padding: 0px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.popUpHeader {
+  display: flex;
+  padding: 20px 16px;
+  align-items: center;
+}
+.popHeading {
+  font-size: 1.2rem;
+  line-height: 2.8rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+}
+.popupContent {
+  padding: 0px 16px 80px;
+}
+.searchBtn {
+  width: 100%;
+}
+.searchBtnCont {
+  padding: 16px;
+}
