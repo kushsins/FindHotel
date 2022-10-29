@@ -19,6 +19,7 @@ const Overlay = ({ open, setPopUp }: { open: boolean; setPopUp: any }) => {
     padding: "12px",
   });
   const handleSearch = () => {
+    alert("check Console");
     console.log(details);
   };
   useEffect(() => {
