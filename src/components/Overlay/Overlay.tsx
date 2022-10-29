@@ -19,10 +19,7 @@ const Overlay = ({ open, setPopUp }: { open: boolean; setPopUp: any }) => {
     padding: "12px",
   });
   const handleSearch = () => {
-    let querry = "";
-    for (let i = 0; i < details.length; i++) {
-      querry.concat(details[i].room.adult.toString());
-    }
+    console.log(details);
   };
   useEffect(() => {
     if (details.length === 8) {
