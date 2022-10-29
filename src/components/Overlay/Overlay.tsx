@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import RoomLayout from "../RoomLayout/RoomLayout";
 import "./Overlay.css";
 import CloseIcon from "@mui/icons-material/Close";
@@ -9,6 +9,7 @@ const Overlay = ({ open, setPopUp }: { open: boolean; setPopUp: any }) => {
   const [details, setDetails] = useState<Array<details>>([
     { id: 0, room: { adult: 1, children: [] } },
   ]);
+  const [addRommBtn, setAddRoomBtn] = useState(false);
 
   const AddRoomButton = styled(Button)({
     color: "primary",
@@ -23,6 +24,13 @@ const Overlay = ({ open, setPopUp }: { open: boolean; setPopUp: any }) => {
       querry.concat(details[i].room.adult.toString());
     }
   };
+  useEffect(() => {
+    if (details.length === 8) {
+      setAddRoomBtn(true);
+    } else {
+      setAddRoomBtn(false);
+    }
+  }, [details.length]);
   const addRoom = () => {
     setDetails([
       ...details,
@@ -62,6 +70,7 @@ const Overlay = ({ open, setPopUp }: { open: boolean; setPopUp: any }) => {
               <AddRoomButton
                 onClick={addRoom}
                 startIcon={<AddIcon style={{ color: "#0077ff" }} />}
+                disabled={addRommBtn}
               >
                 Add Room
               </AddRoomButton>

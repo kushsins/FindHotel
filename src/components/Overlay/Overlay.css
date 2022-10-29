@@ -43,6 +43,7 @@
 }
 .popupContent {
   padding: 0px 16px 80px;
+  overflow-y: auto;
 }
 .searchBtn {
   width: 100%;
